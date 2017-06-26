@@ -18,7 +18,7 @@ small { font-size: 80%; }
 
 pre { overflow: auto; }
 
-code, pre { font-family: monospace, monospace; font-size: 1em; }
+code, pre { font-family: monospace }
 
 .highlight .cm { color: #999988; font-style: italic; }
 
@@ -185,7 +185,7 @@ pre code {padding: 0;color: #2879d0;border: none;}
 hr { height: 0; margin-top: 1em; margin-bottom: 1em; border: 0; border-top: solid 1px #ddd; }
 
 /* GENERAL ELEMENT TYPE STYLES */
-#main-content h1 { margin-top: 0; margin-bottom: 0; font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; font-size: 2.8em; font-weight: normal; color: #474747; text-indent: 6px; letter-spacing: -1px; }
+#main-content h1 { margin-top: 0; margin-bottom: 0; font-family: 'Architects Daughter', sans-serif; font-size: 2.8em; font-weight: normal; color: #474747; text-indent: 6px; letter-spacing: -1px; }
 
 #main-content h1:before { padding-right: 0.3em; margin-left: -0.9em }
 
