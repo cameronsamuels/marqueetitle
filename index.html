@@ -4,30 +4,22 @@
 <link rel="stylesheet" href="css/style.css" media="screen" type="text/css">
 <link rel="stylesheet" href="css/print.css" media="print" type="text/css">
 <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<title>PolyGEN</title></head><body><header><div class="inner"><h1>PolyGEN</h1><h2>Generate html5 canvas polygons</h2>
-<a href="https://github.com/CameronSamuels/polygen" class="button"><small>View repo on</small> GitHub</a></div></header>
+<title>PolyGEN</title></head><body><header><div class="inner"><h1>MarqueeTitle</h1><h2>Turn tab titles into scroling text</h2>
+<a href="https://github.com/CameronSamuels/marqueetitle" class="button"><small>View repo on</small> GitHub</a></div></header>
 <div id="content-wrapper"><div class="inner clearfix"><section id="main-content">
-<p>PolyGEN is an HTML canvas JavaScript library for generating polygons on a canvas.<br />See <a href="/polygen/example.html">example.html</a> for the basic usage.</p>
+<p>MarqueeTitle is a JavaScript library for easily turning document.title into scrolling text (a marquee).<br />See <a href="example.html">example.html</a> for the basic usage.</p>
 <h1 id="get-started">Get started</h1>
-<p>First download <a download="polygen.js" href="/polygen/bin/polygen.js">polygen.js</a> (or better yet, use <a download="polygen.min.js" href="/polygen/bin/polygen.min.js">polygen.min.js</a> for faster speed) to your code folder. Then use this code relatively in your app:</p>
+<p>First download <a download="marquee.js" href="bin/marquee.js">marquee.js</a> <s>(or better yet, use <a download="marquee.min.js" href="bin/marquee.min.js">marquee.min.js</a> for faster speed)</s> to your code folder. Then use this code relatively in your app:</p>
 <h3 id="html">HTML</h3>
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;canvas</span> <span class="na">width=</span><span class="s">"4096"</span> <span class="na">height=</span><span class="s">"4096"</span><span class="nt">&gt;&lt;/canvas&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"polygen.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"marquee.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 </code></pre></div>
 <h3 id="javascript">JavaScript</h3>
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="c1">//Declare canvas element</span>
-<span class="nx">PolyGen</span><span class="p">.</span><span class="nx">canvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'canvas'</span><span class="p">);</span>
-<span class="c1">//Declare canvas context of the canvas element</span>
-<span class="nx">PolyGen</span><span class="p">.</span><span class="nx">context</span> <span class="o">=</span> <span class="nx">PolyGen</span><span class="p">.</span><span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s1">'2d'</span><span class="p">);</span>
-<span class="c1">//Declare the thickness of the lines of the shape</span>
-<span class="nx">PolyGen</span><span class="p">.</span><span class="nx">thickness</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>
-<span class="c1">//Declare the color of the lines - it can be in any CSS color form (hex, rgb, rgba, name, etc)</span>
-<span class="nx">PolyGen</span><span class="p">.</span><span class="nx">color</span> <span class="o">=</span><span class="s1">'#2a2a2a'</span><span class="p">;</span>
-<span class="c1">//Declare the size of the shape - the radius</span>
-<span class="nx">PolyGen</span><span class="p">.</span><span class="nx">size</span> <span class="o">=</span> <span class="mf">2048</span><span class="p">;</span>
-<span class="c1">//Create the shape by calling this function - replace 5 with the number of sides</span>
-<span class="nx">PolyGen</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
-</code></pre></div><p>If you want to clear the canvas, you can easily do that using <code class="highlighter-rouge">PolyGen.clear()</code></p>
-<p><em>Be aware of the <strong><a href="/polygen/LICENSE">license</a></strong> for PolyGEN</em></p><h1 id="about">About</h1>
-<p>This library was made by Cameron Samuels, inspired by <a href="http://ludumdare.com/compo/ludum-dare-35/?action=preview&amp;uid=91735">Ludum Dare 35</a> when desperately needing to generate a polygon with any amount of sides.</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">title</span> <span class="o">=</span> <span class="s2">"User-friendly marquee title example"</span><span class="p">;</span><span class="c1">//set title</span>
+<span class="kd">var</span> <span class="nx">speed</span> <span class="o">=</span> <span class="mi">250</span><span class="p">;</span><span class="c1">//set speed: milleseconds</span>
+<span class="kd">var</span> <span class="nx">seperator</span> <span class="o">=</span> <span class="s2">"|"</span><span class="p">;</span><span class="c1">//set seperator for end to beginning</span>
+<span class="nx">MarqueeTitle</span><span class="p">.</span><span class="nx">start</span><span class="p">(</span><span class="nx">title</span><span class="p">,</span> <span class="nx">speed</span><span class="p">,</span> <span class="nx">seperator</span><span class="p">);</span><span class="c1">//call function to start cycle</span>
+</code></pre></div>
+<p><em>Be aware of the <strong><a href="LICENSE">license</a></strong> for MarqueeTitle</em></p><h1 id="about">About</h1>
+<p>This library was made by Cameron Samuels.</p>
 </section></div></div></body></html>
