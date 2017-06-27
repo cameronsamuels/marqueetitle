@@ -1,14 +1,12 @@
 MarqueeTitle is a JavaScript library for easily turning `document.title` into scrolling text (a marquee).
 
-See [example.html](example.html) for practical use.
-
 # Get started
 
-First download [bin/marquee.js](bin/marquee.js) (or better yet, use <s title="Not available yet">[bin/marquee.min.js](bin/marquee.min.js)</s> for faster speed) to your code folder. Then use this code relatively in your app:
+First download [bin/marquee.js](bin/marquee.js) to your code folder. Then use this code relatively in your app:
 
 ### HTML
 ```html
-<script src="bin/marquee.min.js"></script>
+<script src="marquee.js"></script>
 ```
 ### JavaScript
 ```javascript
