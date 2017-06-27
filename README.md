@@ -45,7 +45,7 @@ Learn about more methods and properties in the [documentation](http://github.com
 
 ***More browsers and version codes coming soon***
 
-\* When browser has a "\*" (says above), the marquee doesn't shift when tab not active
+When a browser has a "\*" (says above), the marquee doesn't shift when the tab is not active
 
 
 # About
