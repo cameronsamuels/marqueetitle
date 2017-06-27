@@ -28,8 +28,8 @@ var seperator = "|"; //set seperator for end to beginning
 MarqueeTitle.start(title, speed, seperator); //call function to start marquee
 ```
 
-*Be aware of the **[license](LICENSE)** for MarqueeTitle*
-
 # About
 
 This library was made by [Cameron Samuels](http://cameronsamuels.com). It is made in JavaScript.
+
+*Be aware of the **[license](LICENSE)** for MarqueeTitle*
