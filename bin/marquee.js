@@ -17,7 +17,8 @@ MarqueeTitle.loop = function(times, title, speed, seperator) {
 	title = (title || MarqueeTitle.title || document.title) + " " + (seperator||" ") + " ";
 	MarqueeTitle.chars = title.split('');
 	MarqueeTitle.speed = speed || MarqueeTitle.speed || 250;
-	MarqueeTitle.interval = setInterval(function(){if(MarqueeTitle.loops)MarqueeTitle.cycle();else clearInterval(MarqueeTitle.interval);if(document.title==MarqueeTitle.title)MarqueeTitle.loops--}, MarqueeTitle.speed);
+	setTimeout(MarqueeTitle.stop, MarqueeTitle.speed * MarqueeTitle.title.length * MarqueeTitle.loops);
+	MarqueeTitle.interval = setInterval(MarqueeTitle.cycle, MarqueeTitle.speed);
 	MarqueeTitle.title = title.replace(" " + (seperator||" ") + " ", "");
 },
 MarqueeTitle.pause = function() { clearInterval(MarqueeTitle.interval) },
