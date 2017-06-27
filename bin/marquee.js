@@ -1,7 +1,7 @@
 var MarqueeTitle = {};
 MarqueeTitle.chars = [],
 MarqueeTitle.start = function(title, speed, seperator) {
-	title += " " + seperator + " ";
+	title += " " + (seperator||" ") + " ";
 	MarqueeTitle.chars = title.split('');
 	MarqueeTitle.interval = setInterval(MarqueeTitle.cycle, speed);
 },
