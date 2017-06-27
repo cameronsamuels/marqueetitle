@@ -5,7 +5,7 @@ MarqueeTitle is a JavaScript library for easily turning `document.title` into sc
 - Instant setup
 - Highly customizeable
 - No effect on load and request times (it's super lightweight)
-- Full [documentation](http://github.com/CameronSamuels/marqueetitle/wiki)
+- Full [documentation](http://github.com/CameronSamuels/marqueetitle/wiki) for methods and properties
 - Works when not actively on the tab
 - Choose the seperation character between end and beginning
 - Choose the scrolling speed
