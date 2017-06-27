@@ -4,7 +4,7 @@ MarqueeTitle.sate = true;
 MarqueeTitle.start = function(title, speed, seperator) {
 	title += " " + seperator + " ";
 	MarqueeTitle.chars = title.split('');
-	setInterval(MarqueeTitle.cycle, speed);
+	MarqueeTitle.interval = setInterval(MarqueeTitle.cycle, speed);
 };
 MarqueeTitle.cycle = function() {
 	if (!MarqueeTitle.state) return;
