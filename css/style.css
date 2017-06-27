@@ -9,17 +9,16 @@ header, main { display: block; }
 a { background-color: transparent; }
 a:active, a:hover { outline: 0; }
 h1 { font-size: 2em; margin: 0.67em 0; }
-pre { overflow: auto; }
+pre { overflow: auto;background-color: #f8f8f8; }
 code, pre { font-family: monospace }
-.highlight .c1 { color: #999988; font-style: italic; }
-.highlight .kd { color: #000000; font-weight: bold; }
-.highlight .mi { color: #009999; }
-.highlight .s2 { color: #d14; }
-.highlight .s { color: #d14; }
-.highlight .na { color: #008080; }
-.highlight .nt { color: #000080; }
-.highlight .o { color: #000000; font-weight: bold; }
-.highlight { background-color: #f8f8f8; }
+.c1 { color: #999988; font-style: italic; }
+.kd { color: #000000; font-weight: bold; }
+.mi { color: #009999; }
+.s2 { color: #d14; }
+.s { color: #d14; }
+.na { color: #008080; }
+.nt { color: #000080; }
+.o { color: #000000; font-weight: bold; }
 body { font-family: sans-serif; font-size: 15px; line-height: 1.5; color: #666 }
 p { margin-top: 0; }
 a { color: #2879d0; }
@@ -34,7 +33,7 @@ a.button { width: 134px; height: 58px; padding-top: 22px; padding-left: 68px; fo
 a.button small { display: block }
 header a.button { position: absolute; top: 0; right: 0 }
 code, pre {margin-bottom: 30px;font-family: Monaco, monospace;font-size: 13px;color: #222;}
-pre { padding: 20px; overflow: auto; text-shadow: none; background: #fff; border: solid 1px #eee; }
+pre { padding: 20px; overflow: auto; text-shadow: none; border: solid 1px #eee; }
 pre code {padding: 0;color: #2879d0;border: none;}
 #main-content h1 { margin-top: 0; margin-bottom: 0; font-family: font, sans-serif; font-size: 2.8em; font-weight: normal; color: #474747; text-indent: 6px; letter-spacing: -1px; }
 #main-content h3 { margin-top: 24px; margin-bottom: 8px; font-family: font,  sans-serif; font-size: 18px; font-weight: bold; color: #474747; text-indent: 3px; }
