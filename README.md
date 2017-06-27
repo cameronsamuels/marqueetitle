@@ -22,10 +22,10 @@ First download [bin/marquee.js](bin/marquee.js) to your code folder. Then use th
 ```
 ### JavaScript
 ```javascript
-var title = "User-friendly marquee title example";//set title
-var speed = 250;//set speed: milleseconds
-var seperator = "|";//set seperator for end to beginning
-MarqueeTitle.start(title, speed, seperator);//call function to start cycle
+var title = "User-friendly marquee title example"; //set title
+var speed = 250; //set speed in milleseconds
+var seperator = "|"; //set seperator for end to beginning
+MarqueeTitle.start(title, speed, seperator); //call function to start marquee
 ```
 
 *Be aware of the **[license](LICENSE)** for MarqueeTitle*
