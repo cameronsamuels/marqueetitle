@@ -1,7 +1,6 @@
 /* MarqueeTitle v2.0pre | MIT License | git.io/vQZbs */
 var MarqueeTitle = {};
-MarqueeTitle.chars = [],
-MarqueeTitle.title = "";
+MarqueeTitle.chars = [], MarqueeTitle.title = "",
 MarqueeTitle.start = function(title, speed, seperator) {
 	title = (title || MarqueeTitle.title || document.title) + " " + (seperator||" ") + " ";
 	MarqueeTitle.chars = title.split('');
