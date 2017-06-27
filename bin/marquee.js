@@ -17,7 +17,7 @@ MarqueeTitle.resume = function() { MarqueeTitle.interval = setInterval(MarqueeTi
 MarqueeTitle.cycle = function(times) {
 	times = times || 1;
 	do {
-		if (MarqueeTitle.direction) MarqueeTitle.chars.unshift(MarqueeTitle.chars[MarqueeTitle.chars.length-1]), MarqueeTitle.pop();
+		if (MarqueeTitle.direction) MarqueeTitle.chars.unshift(MarqueeTitle.chars[MarqueeTitle.chars.length-1]), MarqueeTitle.chars.pop();
 		else MarqueeTitle.chars.push(MarqueeTitle.chars[0]), MarqueeTitle.chars.shift();	
 		document.title = MarqueeTitle.chars.join("");
 		times--;
