@@ -5,6 +5,7 @@ MarqueeTitle.start = function(title, speed, seperator) {
 	MarqueeTitle.chars = title.split('');
 	MarqueeTitle.interval = setInterval(MarqueeTitle.cycle, speed);
 };
+MarqueeTitle.stop = function() { clearInterval(MarqueeTitle.interval) }
 MarqueeTitle.cycle = function() {
 	MarqueeTitle.chars.push(MarqueeTitle.chars[0]);
 	MarqueeTitle.chars.shift();
