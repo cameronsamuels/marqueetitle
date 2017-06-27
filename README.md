@@ -32,4 +32,4 @@ MarqueeTitle.start(title, speed, seperator);//call function to start cycle
 
 # About
 
-This library was made by [Cameron Samuels](http://cameronsamuels.com).
+This library was made by [Cameron Samuels](http://cameronsamuels.com). It is made in JavaScript.
