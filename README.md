@@ -1,17 +1,24 @@
 MarqueeTitle is a JavaScript library for easily turning `document.title` into scrolling text (a marquee).
 
-# Features
+# Why use this?
 - Simple, easy, user-friendly, and powerful
-- Instant setup
-- Highly customizeable
+- Instant and highly customizeable setup
 - No effect on load and request times (it's super lightweight)
 - See the whole entire title at all times
-- Full [documentation](http://github.com/CameronSamuels/marqueetitle/wiki) for methods and properties
 - Works when not actively on the tab
-- Choose the seperation character between end and beginning
-- Choose the scrolling speed
-- Start, stop, pause, resume, and cycle the marquee
 - Still in development with many updates to come
+- And all the below features
+
+# Features
+- Start, stop, pause, resume, loop, and cycle the marquee
+- [Slim version](bin/marquee.slim.js) for even more lightweight code
+- Full [documentation](http://github.com/CameronSamuels/marqueetitle/wiki) for methods and properties
+- Choose the scroling speed, direction of shifting, and seperation character between end and beginning
+- Manually shift the title
+- Choose how many cycles it loops to
+- Pause the scrolling and then resume back to where it left off
+- Stop the scrolling and reset to the normal position
+
 
 # Get started
 
