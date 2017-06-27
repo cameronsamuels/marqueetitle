@@ -13,6 +13,7 @@ MarqueeTitle.stop = function() {
 	document.title = MarqueeTitle.title;
 },
 MarqueeTitle.pause = function() { clearInterval(MarqueeTitle.interval) },
+MarqueeTitle.resume = function() { MarqueeTitle.interval = setInterval(MarqueeTitle.cycle, MarqueeTitle.speed) },
 MarqueeTitle.cycle = function() {
 	MarqueeTitle.chars.push(MarqueeTitle.chars[0]);
 	MarqueeTitle.chars.shift();
