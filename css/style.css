@@ -10,15 +10,13 @@ a { background-color: transparent; }
 a:active, a:hover { outline: 0; }
 h1 { font-size: 2em; margin: 0.67em 0; }
 pre { overflow: auto;background-color: #f8f8f8; }
-code, pre { font-family: monospace }
 .c1 { color: #999988; font-style: italic; }
-.kd { color: #000000; font-weight: bold; }
-.mi { color: #009999; }
+.kd { color: #000; }
+.mi { color: #099; }
 .s2 { color: #d14; }
 .s { color: #d14; }
-.na { color: #008080; }
-.nt { color: #000080; }
-.o { color: #000000; font-weight: bold; }
+.na { color: #088; }
+.o { color: #000; }
 body { font-family: sans-serif; font-size: 15px; line-height: 1.5; color: #666 }
 p { margin-top: 0; }
 a { color: #2879d0; }
