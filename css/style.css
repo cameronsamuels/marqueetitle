@@ -4,9 +4,7 @@ body { margin: 0;background: #fafafa  }
 aside, footer, header, main, section { display: block; }
 a { background-color: transparent; }
 a:active, a:hover { outline: 0; }
-b, strong { font-weight: bold; }
 h1 { font-size: 2em; margin: 0.67em 0; }
-small { font-size: 80%; }
 pre { overflow: auto; }
 code, pre { font-family: monospace }
 .highlight .c1 { color: #999988; font-style: italic; }
@@ -18,7 +16,7 @@ code, pre { font-family: monospace }
 .highlight .nt { color: #000080; }
 .highlight .o { color: #000000; font-weight: bold; }
 .highlight { background-color: #f8f8f8; }
-body { font-family: sans-serif; font-size: 15px; font-weight: 400; line-height: 1.5; color: #666 }
+body { font-family: sans-serif; font-size: 15px; line-height: 1.5; color: #666 }
 p { margin-top: 0; }
 a { color: #2879d0; }
 a:hover { text-decoration:underline }
@@ -31,18 +29,14 @@ header h2 { width: 540px; margin-top: 0; margin-bottom: 0; font-size: 26px; font
 a.button { width: 134px; height: 58px; padding-top: 22px; padding-left: 68px; font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; font-size: 23px; line-height: 1.2; color: #fff; }
 a.button small { display: block; font-size: 11px; }
 header a.button { position: absolute; top: 0; right: 0 }
-code, pre {margin-bottom: 30px;font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;font-size: 13px;color: #222;}
-code {padding: 0 3px;}
-pre { padding: 20px; overflow: auto; text-shadow: none; background: #fff; border: solid 1px #f2f2f2; }
+code, pre {margin-bottom: 30px;font-family: Monaco, monospace;font-size: 13px;color: #222;}
+pre { padding: 20px; overflow: auto; text-shadow: none; background: #fff; border: solid 1px #eee; }
 pre code {padding: 0;color: #2879d0;border: none;}
 #main-content h1 { margin-top: 0; margin-bottom: 0; font-family: 'Architects Daughter', sans-serif; font-size: 2.8em; font-weight: normal; color: #474747; text-indent: 6px; letter-spacing: -1px; }
-#main-content h3 { margin-top: 24px; margin-bottom: 8px; font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; font-size: 18px; font-weight: bold; color: #474747; text-indent: 3px; }
+#main-content h3 { margin-top: 24px; margin-bottom: 8px; font-family: 'Architects Daughter',  sans-serif; font-size: 18px; font-weight: bold; color: #474747; text-indent: 3px; }
 p{margin-bottom:20px}
 a { text-decoration: none; }
 p a { font-weight: 400; }
-.clearfix:after { display: block; height: 0; clear: both; visibility: hidden; content: '.'; }
-.clearfix { display: inline-block; }
-.clearfix { display: block; }
 @media only screen and (min-width: 768px) and (max-width: 959px) { .inner { width: 740px; }
   header h1, header h2 { width: 340px; }
   header h1 { font-size: 60px; }
