@@ -1,7 +1,7 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html { font-family: sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
 body { margin: 0;background: #fafafa  }
-aside, footer, header, main, section { display: block; }
+header, main { display: block; }
 a { background-color: transparent; }
 a:active, a:hover { outline: 0; }
 h1 { font-size: 2em; margin: 0.67em 0; }
@@ -26,8 +26,8 @@ header h2 { width: 540px; margin-top: 0; margin-bottom: 0; font-size: 26px; font
 .inner { position: relative; width: 940px; margin: 0 auto; }
 #content-wrapper { padding-top: 30px; border-top: solid 1px #fff; }
 #main-content { float: left; width: 100%; }
-a.button { width: 134px; height: 58px; padding-top: 22px; padding-left: 68px; font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; font-size: 23px; line-height: 1.2; color: #fff; }
-a.button small { display: block; font-size: 11px; }
+a.button { width: 134px; height: 58px; padding-top: 22px; padding-left: 68px; font-family: 'Architects Daughter', sans-serif; font-size: 23px; color: #fff; }
+a.button small { display: block }
 header a.button { position: absolute; top: 0; right: 0 }
 code, pre {margin-bottom: 30px;font-family: Monaco, monospace;font-size: 13px;color: #222;}
 pre { padding: 20px; overflow: auto; text-shadow: none; background: #fff; border: solid 1px #eee; }
@@ -35,8 +35,7 @@ pre code {padding: 0;color: #2879d0;border: none;}
 #main-content h1 { margin-top: 0; margin-bottom: 0; font-family: 'Architects Daughter', sans-serif; font-size: 2.8em; font-weight: normal; color: #474747; text-indent: 6px; letter-spacing: -1px; }
 #main-content h3 { margin-top: 24px; margin-bottom: 8px; font-family: 'Architects Daughter',  sans-serif; font-size: 18px; font-weight: bold; color: #474747; text-indent: 3px; }
 p{margin-bottom:20px}
-a { text-decoration: none; }
-p a { font-weight: 400; }
+a { text-decoration: none }
 @media only screen and (min-width: 768px) and (max-width: 959px) { .inner { width: 740px; }
   header h1, header h2 { width: 340px; }
   header h1 { font-size: 60px; }
