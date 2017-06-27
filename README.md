@@ -41,7 +41,7 @@ Learn about more methods and properties in the [documentation](http://github.com
 # Compatibility
 | Chrome | Internet Explorer | Safari iOS
 |---|---|---|
-| Yes | | |
+| Yes | 8 (maybe more) | |
 
 *Versions coming soon*
 
