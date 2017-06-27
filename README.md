@@ -32,4 +32,4 @@ MarqueeTitle.start(title, speed, seperator); //call function to start marquee
 
 This library was made by [Cameron Samuels](http://cameronsamuels.com). It is made in JavaScript.
 
-*Be aware of the **[license](LICENSE)** for MarqueeTitle*
+MarqueeTitle in licensed under the [MIT License](LICENSE).
