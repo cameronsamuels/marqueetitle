@@ -15,7 +15,7 @@ Paramaters:
 MarqueeTitle.start = function(title, speed, seperator) {
 	title += " " + seperator + " ";
 	MarqueeTitle.chars = title.split('');
-	setInterval("MarqueeTitle.cycle()", speed);
+	setInterval(MarqueeTitle.cycle, speed);
 };
 
 /* This function is called every (speed) milliseconds.
