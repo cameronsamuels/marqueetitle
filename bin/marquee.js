@@ -1,6 +1,6 @@
 /* MarqueeTitle v2.0pre | MIT License | git.io/vQZbs */
 var MarqueeTitle = {};
-MarqueeTitle.chars = [], MarqueeTitle.title = "", MarqueeTitle.speed = 250,
+MarqueeTitle.chars = [], MarqueeTitle.title = "", MarqueeTitle.speed = 250, MarqueeTitle.direction = 0,
 MarqueeTitle.start = function(title, speed, seperator) {
 	title = (title || MarqueeTitle.title || document.title) + " " + (seperator||" ") + " ";
 	MarqueeTitle.chars = title.split('');
@@ -17,8 +17,8 @@ MarqueeTitle.resume = function() { MarqueeTitle.interval = setInterval(MarqueeTi
 MarqueeTitle.cycle = function(times) {
 	times = times || 1;
 	do {
-		MarqueeTitle.chars.push(MarqueeTitle.chars[0]);
-		MarqueeTitle.chars.shift();
+		if (MarqueeTitle.direction) MarqueeTitle.chars.unshift(MarqueeTitle.chars[MarqueeTitle.chars.length-1]), MarqueeTitle.pop();
+		else MarqueeTitle.chars.push(MarqueeTitle.chars[0]), MarqueeTitle.chars.shift();	
 		document.title = MarqueeTitle.chars.join("");
 		times--;
 	} while (times > 0);
