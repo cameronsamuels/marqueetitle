@@ -1,3 +1,4 @@
+/* MarqueeTitle v2.0pre | MIT License | git.io/vQZbs */
 var MarqueeTitle = {};
 MarqueeTitle.chars = [],
 MarqueeTitle.title = "";
