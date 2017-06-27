@@ -38,6 +38,13 @@ MarqueeTitle.start(title, speed, seperator); //call function to start marquee
 
 Learn about more methods and properties in the [documentation](http://github.com/CameronSamuels/marqueetitle/wiki).
 
+# Compatibility
+| Chrome | Internet Explorer | Safari iOS
+|---|---|---|
+| Yes | | |
+
+*Versions coming soon*
+
 # About
 
 This library was made by [Cameron Samuels](http://cameronsamuels.com). It is made in JavaScript.
