@@ -4,7 +4,7 @@
   src: url(https://fonts.gstatic.com/s/architectsdaughter/v6/RXTgOOQ9AAtaVOHxx0IUBBoTIN0je7AiOLXaVBr1ByU.woff2) format('woff2');
 }
 html { font-family: sans-serif; -webkit-text-size-adjust: 100%}
-body { margin: 0;background: #fafafa  }
+body { margin: 0;background: #fafafa;text-align:justify  }
 header, main { display: block; }
 a { background-color: transparent; }
 a:active, a:hover { outline: 0; }
