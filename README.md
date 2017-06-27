@@ -39,11 +39,14 @@ MarqueeTitle.start(title, speed, seperator); //call function to start marquee
 Learn about more methods and properties in the [documentation](http://github.com/CameronSamuels/marqueetitle/wiki).
 
 # Compatibility
-| Chrome | Internet Explorer | Safari iOS
-|---|---|---|
-| Yes | 8 (maybe more) | |
+| Chrome | Internet Explorer | Safari iOS | Chrome iOS
+|---|---|---|---|
+| Yes | 8 (maybe more) | | Yes\* |
 
-*Versions coming soon*
+***More browsers and version codes coming soon***
+
+\* When browser has a "\*" (says above), the marquee doesn't shift when tab not active
+
 
 # About
 
