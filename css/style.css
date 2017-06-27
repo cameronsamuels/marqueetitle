@@ -47,7 +47,6 @@ p a { font-weight: 400; }
   header h1, header h2 { width: 340px; }
   header h1 { font-size: 60px; }
   header h2 { font-size: 30px; }
-  #main-content { width: 490px; }
   #main-content h1:before, #main-content h2:before, #main-content h3:before, #main-content h4:before, #main-content h5:before, #main-content h6:before { padding-right: 0; margin-left: 0; content: none; } }
 @media only screen and (max-width: 767px) { .inner { width: 93%; }
   header { padding: 20px 0; }
