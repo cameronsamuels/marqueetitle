@@ -1,9 +1,11 @@
 var MarqueeTitle = {};
 MarqueeTitle.chars = [],
+MarqueeTitle.title = "";
 MarqueeTitle.start = function(title, speed, seperator) {
-	title = (title || document.title) + " " + (seperator||" ") + " ";
+	title = (title || MarqueeTitle.title || document.title) + " " + (seperator||" ") + " ";
 	MarqueeTitle.chars = title.split('');
 	MarqueeTitle.interval = setInterval(MarqueeTitle.cycle, speed||250);
+	MarqueeTitle.title = title.replace(" " + (seperator||" ") + " ", "");
 },
 MarqueeTitle.stop = function() { clearInterval(MarqueeTitle.interval) },
 MarqueeTitle.cycle = function() {
