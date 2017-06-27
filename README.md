@@ -9,6 +9,7 @@ MarqueeTitle is a JavaScript library for easily turning `document.title` into sc
 - Works when not actively on the tab
 - Choose the seperation character between end and beginning
 - Choose the scrolling speed
+- Start, stop, pause, resume, and cycle the marquee
 - Still in development with many updates to come
 
 # Get started
