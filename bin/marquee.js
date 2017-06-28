@@ -2,11 +2,12 @@
 var MarqueeTitle = {}; MarqueeTitle.chars = [], MarqueeTitle.title = "", MarqueeTitle.speed = 250, MarqueeTitle.direction = 0,
 MarqueeTitle.seperator = " ", MarqueeTitle.shifts = 1,
 MarqueeTitle.start = function(title, speed, seperator) {
-	title = (title || MarqueeTitle.title || document.title) + " " + (seperator||MarqueeTitle.seperator||" ") + " ";
+	MarqueeTitle.seperator = seperator || MarqueeTitle.seperator || " ";
+	title = (title || MarqueeTitle.title || document.title) + " " + MarqueeTitle.seperator + " ";
 	MarqueeTitle.chars = title.split('');
 	MarqueeTitle.speed = speed || MarqueeTitle.speed || 250;
 	MarqueeTitle.interval = setInterval(MarqueeTitle.cycle, MarqueeTitle.speed);
-	MarqueeTitle.title = title.replace(" " + (seperator||MarqueeTitle.seperator||" ") + " ", "");
+	MarqueeTitle.title = title.replace(" " + MarqueeTitle.seperator + " ", "");
 },
 MarqueeTitle.stop = function() {
 	clearInterval(MarqueeTitle.interval);
@@ -14,12 +15,13 @@ MarqueeTitle.stop = function() {
 },
 MarqueeTitle.loop = function(times, title, speed, seperator) {
 	times = times || 1;
-	title = (title || MarqueeTitle.title || document.title) + " " + (seperator||MarqueeTitle.seperator||" ") + " ";
+	MarqueeTitle.seperator = seperator || MarqueeTitle.seperator || " ";
+	title = (title || MarqueeTitle.title || document.title) + " " + MarqueeTitle.seperator + " ";
 	MarqueeTitle.chars = title.split('');
 	MarqueeTitle.speed = speed || MarqueeTitle.speed || 250;
 	setTimeout(MarqueeTitle.stop, MarqueeTitle.speed * MarqueeTitle.title.length * times);
 	MarqueeTitle.interval = setInterval(MarqueeTitle.cycle, MarqueeTitle.speed);
-	MarqueeTitle.title = title.replace(" " + (seperator||MarqueeTitle.seperator||" ") + " ", "");
+	MarqueeTitle.title = title.replace(" " + MarqueeTitle.seperator + " ", "");
 },
 MarqueeTitle.pause = function() { clearInterval(MarqueeTitle.interval) },
 MarqueeTitle.resume = function() { MarqueeTitle.interval = setInterval(MarqueeTitle.cycle, MarqueeTitle.speed) },
