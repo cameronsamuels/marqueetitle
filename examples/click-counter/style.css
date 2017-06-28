@@ -9,6 +9,8 @@ body, html {
   text-align: center;
   font-family: sans-serif;
   color: #555;
+  overflow-x: hidden;
+  word-wrap: break-word;
 }
 button {
   outline: none;
