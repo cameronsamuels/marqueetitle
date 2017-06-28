@@ -5,12 +5,11 @@ MarqueeTitle.start = function(title, speed, seperator) {
 	title = (title || MarqueeTitle.title || document.title) + " " + (seperator||" ") + " ";
 	MarqueeTitle.chars = title.split('');
 	MarqueeTitle.speed = speed || MarqueeTitle.speed || 250;
-	MarqueeTitle.interval = setInterval(MarqueeTitle.cycle, MarqueeTitle.speed),
-	MarqueeTitle.callbackInterval = setInterval(MarqueeTitle.callback||function(){}, MarqueeTitle.speed * MarqueeTitle.title.length);
+	MarqueeTitle.interval = setInterval(MarqueeTitle.cycle, MarqueeTitle.speed);
 	MarqueeTitle.title = title.replace(" " + (seperator||" ") + " ", "");
 },
 MarqueeTitle.stop = function() {
-	clearInterval(MarqueeTitle.interval), clearInterval(MarqueeTitle.callbackInterval);
+	clearInterval(MarqueeTitle.interval);
 	document.title = MarqueeTitle.title;
 },
 MarqueeTitle.loop = function(times, title, speed, seperator) {
@@ -22,8 +21,8 @@ MarqueeTitle.loop = function(times, title, speed, seperator) {
 	MarqueeTitle.interval = setInterval(MarqueeTitle.cycle, MarqueeTitle.speed);
 	MarqueeTitle.title = title.replace(" " + (seperator||" ") + " ", "");
 },
-MarqueeTitle.pause = function() { clearInterval(MarqueeTitle.interval), clearInterval(MarqueeTitle.callbackInterval) },
-MarqueeTitle.resume = function() { MarqueeTitle.interval = setInterval(MarqueeTitle.cycle, MarqueeTitle.speed), MarqueeTitle.callbackInterval = setInterval(MarqueeTitle.callback||function(){}, MarqueeTitle.speed * MarqueeTitle.title.length) },
+MarqueeTitle.pause = function() { clearInterval(MarqueeTitle.interval) },
+MarqueeTitle.resume = function() { MarqueeTitle.interval = setInterval(MarqueeTitle.cycle, MarqueeTitle.speed) },
 MarqueeTitle.cycle = function(times) {
 	times = times || MarqueeTitle.shifts || 1;
 	do {
