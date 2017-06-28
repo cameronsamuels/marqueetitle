@@ -1,5 +1,6 @@
 var game = {
-   on: true, time: 10, score: 0, button: document.querySelector('button')
+   on: true, time: 10, score: 0,
+   button: document.querySelector('button'), timeText: document.querySelector('h2')
 }; //initial variables
 game.pause = function(){
    game.on = false; //pause the game
@@ -11,6 +12,7 @@ game.resume = function() {
 },
 game.update = function() {
    button.textContent = game.score; //update the button text to show the score
+   timeText.textContent = game.time; //update the time text to show the time left
 },
 game.over = function() {
   alert('Game over: you earned ' + game.score + 'points!'); //notifiy for the game to be over
