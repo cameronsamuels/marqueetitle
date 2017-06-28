@@ -34,6 +34,4 @@ MarqueeTitle.cycle = function(times) {
 		times--;
 	} while (times > 0);
 }
-MarqueeTitle.reverse = function() {
-	MarqueeTitle.direction = MarqueeTitle.direction == 0?1:0;
-}
+MarqueeTitle.reverse = function() { MarqueeTitle.direction = MarqueeTitle.direction == 0?1:0 }
