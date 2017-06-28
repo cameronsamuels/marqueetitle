@@ -28,7 +28,11 @@ button {
   button { font-size: 300px; line-height:300px }
 }
 h2 {
-  font-size: 3em
+  font-size: 3em;
+  margin: 20px;
+}
+h1,h3 {
+  margin: 5px;
 }
 a, a:visited {
   color: #5bf;
