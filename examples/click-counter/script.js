@@ -1,18 +1,19 @@
 var game = {
-   on: false, time: 10, score: 0,
-   button: document.querySelector('button'), timeText: document.querySelector('h2')
+  on: false, time: 10, score: 0,
+  button: document.querySelector('button'), timeText: document.querySelector('h2')
 }; //initial variables
 game.pause = function(){
-   game.on = false; //pause the game
-   MarqueeTitle.pause(); //pause the marquee animation
+  game.on = false; //pause the game
+  MarqueeTitle.pause(); //pause the marquee animation
 },
 game.resume = function() {
   game.on = true; //resume the game
   MarqueeTitle.resume(); //resume the marquee animation
 },
 game.update = function() {
-   game.button.textContent = game.score; //update the button text to show the score
-   game.timeText.textContent = game.time; //update the time text to show the time left
+  if (game.on == false) return;
+  game.button.textContent = game.score; //update the button text to show the score
+  game.timeText.textContent = game.time; //update the time text to show the time left
 },
 game.over = function() {
   game.pause(); //pause the game
@@ -27,9 +28,9 @@ game.refresh = function() {
   game.update(); //update the UI
 },
 game.start = function() {
-   MarqueeTitle.start(); //start the marquee tab title animation
-   game.on = true; //enable game refresh
-   game.interval = setInterval(game.refresh, 1000); //set repeating to every 1 second to call game.refresh()
+  MarqueeTitle.start(); //start the marquee tab title animation
+  game.on = true; //enable game refresh
+  game.interval = setInterval(game.refresh, 1000); //set repeating to every 1 second to call game.refresh()
 },
 game.click = function() {
   if (game.score == 0) game.start();
