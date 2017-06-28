@@ -14,11 +14,21 @@ button {
   outline: none;
   -webkit-appearance: none;
   border-radius: 0;
-  border: 1px black solid;
-  padding: 5px;
+  border: 10px #000 solid;
+  width: 95vw;
+  max-width: 400px;
+  height: 95vw;
+  max-height: 400px;
+  font-size: 75vw;
   box-shadow: none;
   background: #555;
   color: #eee;
+}
+@media screen and (min-width: 400px) {
+  button { font-size: 300px; line-height:300px }
+}
+h2 {
+  font-size: 3em
 }
 a, a:visited {
   color: #5bf;
