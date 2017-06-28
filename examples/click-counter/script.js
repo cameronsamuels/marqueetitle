@@ -1,5 +1,5 @@
 var game = {
-   on: true, time: 10, score: 0,
+   on: false, time: 10, score: 0,
    button: document.querySelector('button'), timeText: document.querySelector('h2')
 }; //initial variables
 game.pause = function(){
@@ -25,6 +25,7 @@ game.refresh = function() {
   game.update(); //update the UI
 }
 game.click = function() {
+  if (game.score == 0) game.on = true;
   if (game.on == false) return; //stop execution if paused
   game.score++; //add 1 to score
   game.update(); //update the text of the button instantly before the interval executes
