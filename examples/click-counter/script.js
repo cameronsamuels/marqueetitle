@@ -23,13 +23,16 @@ game.refresh = function() {
   game.time--; //subtract 1 from time left
   if (game.time == 0) game.over(); //call game over if ran out of time
   game.update(); //update the UI
-}
+},
+game.start = function() {
+   MarqueeTitle.start(); //start the marquee tab title animation
+   game.on = true; //enable game refresh
+   game.interval = setInterval(game.refresh, 1000); //set repeating to every 1 second to call game.refresh()
+},
 game.click = function() {
-  if (game.score == 0) game.on = true;
+  if (game.score == 0) game.start();
   if (game.on == false) return; //stop execution if paused
   game.score++; //add 1 to score
   game.update(); //update the text of the button instantly before the interval executes
 },
-MarqueeTitle.start(); //start the marquee tab title animation
-game.interval = setInterval(game.refresh, 1000); //set repeating to every 1 second to call game.refresh()
 game.button.addEventListener('click', game.click); //add click listeners to earn points
