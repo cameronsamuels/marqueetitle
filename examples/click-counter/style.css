@@ -1,0 +1,29 @@
+body, html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  font-family: sans-serif;
+  color: #555;
+}
+button {
+  outline: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: 1px black solid;
+  padding: 5px;
+  box-shadow: none;
+  background: #555;
+  color: #eee;
+}
+a, a:visited {
+  color: #5bf;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline
+}
