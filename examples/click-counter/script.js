@@ -12,7 +12,7 @@ game.resume = function() {
 },
 game.update = function() {
    game.button.textContent = game.score; //update the button text to show the score
-   timeText.textContent = game.time; //update the time text to show the time left
+   game.timeText.textContent = game.time; //update the time text to show the time left
 },
 game.over = function() {
   alert('Game over: you earned ' + game.score + ' points!'); //notifiy for the game to be over
