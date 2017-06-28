@@ -16,7 +16,7 @@ game.update = function() {
 },
 game.over = function() {
   game.pause(); //pause the game
-  game.timeText = "Times up!!"; //notifiy that the game is over
+  game.timeText.textContent = "Times up!!"; //notifiy that the game is over
   game.button.style.background = game.score > 50 ? "#0d0" : "#d00"; //set the button's backgroud to a user-friendly color
   game.button.style.border = "10px solid " + (game.score > 50 ? "#0a0" : "#a00"); //set the button's border to a user-friendly color
 },
