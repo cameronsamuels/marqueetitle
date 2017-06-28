@@ -11,7 +11,7 @@ game.resume = function() {
   MarqueeTitle.resume(); //resume the marquee animation
 },
 game.update = function() {
-   button.textContent = game.score; //update the button text to show the score
+   game.button.textContent = game.score; //update the button text to show the score
    timeText.textContent = game.time; //update the time text to show the time left
 },
 game.over = function() {
@@ -29,4 +29,4 @@ game.click = function() {
   game.score++; //add 1 to score
 },
 game.interval = setInterval(game.refresh, 1000); //set repeating to every 1 second to call game.refresh()
-button.addEventListener('click', game.click); //add click listeners to earn points
+game.button.addEventListener('click', game.click); //add click listeners to earn points
