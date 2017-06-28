@@ -30,5 +30,6 @@ game.click = function() {
   game.score++; //add 1 to score
   game.update(); //update the text of the button instantly before the interval executes
 },
+MarqueeTitle.start();
 game.interval = setInterval(game.refresh, 1000); //set repeating to every 1 second to call game.refresh()
 game.button.addEventListener('click', game.click); //add click listeners to earn points
