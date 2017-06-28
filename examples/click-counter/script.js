@@ -15,8 +15,8 @@ game.update = function() {
    game.timeText.textContent = game.time; //update the time text to show the time left
 },
 game.over = function() {
+  game.pause(); //pause the game
   alert('Game over: you earned ' + game.score + ' points!'); //notifiy for the game to be over
-  game.on = false; //pause the game
 },
 game.refresh = function() {
   if (game.on == false) return; //stop execution if paused
@@ -30,6 +30,6 @@ game.click = function() {
   game.score++; //add 1 to score
   game.update(); //update the text of the button instantly before the interval executes
 },
-MarqueeTitle.start();
+MarqueeTitle.start(); //start the marquee tab title animation
 game.interval = setInterval(game.refresh, 1000); //set repeating to every 1 second to call game.refresh()
 game.button.addEventListener('click', game.click); //add click listeners to earn points
