@@ -26,20 +26,14 @@ button {
   background: #555;
   color: #eee;
 }
-@media screen and (min-width: 400px) {
-  button { font-size: 300px; line-height:300px }
-}
+@media screen and (min-width: 400px) { button { font-size: 300px; line-height:300px } }
 h2 {
   font-size: 3em;
   margin: 20px;
 }
-h1,h3 {
-  margin: 5px;
-}
+h1,h3 { margin: 5px }
 a, a:visited {
   color: #5bf;
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline
-}
+a:hover { text-decoration: underline }
