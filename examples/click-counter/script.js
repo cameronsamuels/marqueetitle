@@ -15,7 +15,7 @@ game.update = function() {
    timeText.textContent = game.time; //update the time text to show the time left
 },
 game.over = function() {
-  alert('Game over: you earned ' + game.score + 'points!'); //notifiy for the game to be over
+  alert('Game over: you earned ' + game.score + ' points!'); //notifiy for the game to be over
   game.on = false; //pause the game
 },
 game.refresh = function() {
