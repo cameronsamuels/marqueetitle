@@ -52,4 +52,4 @@ When a browser has a "\*" (says above), the marquee doesn't shift when the tab i
 
 This library was made by [Cameron Samuels](http://cameronsamuels.com). It is made in JavaScript.
 
-MarqueeTitle in licensed under the [MIT License](LICENSE).
+MarqueeTitle in licensed under the [MIT License](LICENSE) but with many major edits.
