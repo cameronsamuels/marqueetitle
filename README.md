@@ -39,9 +39,14 @@ MarqueeTitle.start(title, speed, seperator); //call function to start marquee
 Learn about more methods and properties in the [documentation](http://github.com/CameronSamuels/marqueetitle/wiki).
 
 # Compatibility
-| Chrome | Internet Explorer | Safari iOS | Chrome iOS
-|---|---|---|---|
-| Yes | 8 (maybe more) | Yes | Yes\* |
+### Desktop
+| Chrome | Internet Explorer | Edge
+|---|---|---
+| Yes | 8 (maybe more) | Yes
+### Mobile
+| Safari | Chrome iOS
+|---|---
+| Yes | Yes\*
 
 ***More browsers and version codes coming soon***
 
