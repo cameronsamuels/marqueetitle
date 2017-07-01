@@ -33,8 +33,8 @@ MarqueeTitle.cycle = function(times) {
 		document.title = MarqueeTitle.chars.join("");
 		times--;
 	} while (times > 0);
-}
-MarqueeTitle.reverse = function() { MarqueeTitle.direction = MarqueeTitle.direction == 0?1:0 }
+},
+MarqueeTitle.reverse = function() { MarqueeTitle.direction = MarqueeTitle.direction == 0?1:0 },
 MarqueeTitle.seperate = function(seperator) {
 	MarqueeTitle.seperator = seperator;
 	MarqueeTitle.start();
