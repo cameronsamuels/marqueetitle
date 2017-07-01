@@ -18,9 +18,9 @@ button {
   border-radius: 0;
   border: 10px #000 solid;
   width: 95vw;
-  max-width: 400px;
+  max-width: 300px;
   height: 95vw;
-  max-height: 400px;
+  max-height: 300px;
   font-size: 75vw;
   box-shadow: none;
   background: #555;
