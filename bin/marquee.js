@@ -6,6 +6,7 @@ MarqueeTitle.start = function(title, speed, seperator) {
 	title = (title || MarqueeTitle.title || document.title) + " " + MarqueeTitle.seperator + " ";
 	MarqueeTitle.chars = title.split('');
 	MarqueeTitle.speed = speed || MarqueeTitle.speed || 250;
+	clearInterval(MarqueeTitle.interval);
 	MarqueeTitle.interval = setInterval(MarqueeTitle.cycle, MarqueeTitle.speed);
 	MarqueeTitle.title = title.replace(" " + MarqueeTitle.seperator + " ", "");
 },
