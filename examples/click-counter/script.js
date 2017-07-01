@@ -11,7 +11,7 @@ game.resume = function() {
   MarqueeTitle.resume(); //resume the marquee animation
 },
 game.update = function() {
-  if (game.on == false) return;
+  if (game.on == false) return; //stop execution if game is over
   game.button.textContent = game.score; //update the button text to show the score
   game.timeText.textContent = game.time; //update the time text to show the time left
 },
@@ -38,4 +38,5 @@ game.click = function() {
   game.score++; //add 1 to score
   game.update(); //update the text of the button instantly before the interval executes
 },
-game.button.addEventListener('click', game.click); //add click listeners to earn points
+if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) game.button.addEventListener('touchend', game.click); //add touch listener to earn points
+else game.button.addEventListener('click', game.click); //add click listener to earn points
