@@ -26,7 +26,7 @@ First download [bin/marquee.js](bin/marquee.js) to your code folder. Then use th
 ```
 ### JavaScript
 ```javascript
-MarqueeTitle.start(); //call function to start marquee
+MarqueeTitle.start(); //call this function to start marquee
 ```
 Learn about more methods and properties in the [documentation](http://github.com/CameronSamuels/marqueetitle/wiki).
 # Compatibility
