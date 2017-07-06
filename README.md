@@ -13,7 +13,7 @@ MarqueeTitle is a JavaScript library for easily turning `document.title` into sc
 - Start, stop, pause, resume, loop, and cycle the marquee
 - [Slim version](bin/marquee.slim.js) for even more lightweight code
 - Full [documentation](http://github.com/CameronSamuels/marqueetitle/wiki) for methods and properties
-- Choose the scroling speed, direction of shifting, and seperation character between end and beginning
+- Choose the scroling speed, direction of shifting, and separation character between end and beginning
 - Manually shift the title
 - Choose how many cycles it loops to
 - Pause the scrolling and then resume back to where it left off
