@@ -7,7 +7,6 @@ MarqueeTitle is a JavaScript library for easily turning `document.title` into sc
 - Works when not actively on the tab
 - Still in development with many updates to come
 - And all the below features
-
 # Features
 - Start, stop, pause, resume, loop, and cycle the marquee
 - [Slim version](bin/marquee.slim.js) for even more lightweight code
@@ -17,10 +16,8 @@ MarqueeTitle is a JavaScript library for easily turning `document.title` into sc
 - Choose how many cycles it loops to
 - Pause the scrolling and then resume back to where it left off
 - Stop the scrolling and reset to the normal position
-
 # Get started
 First download [bin/marquee.js](bin/marquee.js) to your code folder. Then use this code relatively in your app for basic usage:
-
 ### HTML
 ```html
 <script src="marquee.js"></script>
@@ -29,9 +26,7 @@ First download [bin/marquee.js](bin/marquee.js) to your code folder. Then use th
 ```javascript
 MarqueeTitle.start(); //call function to start marquee
 ```
-
 Learn about more methods and properties in the [documentation](http://github.com/CameronSamuels/marqueetitle/wiki).
-
 # Compatibility
 ### Desktop
 | Chrome | Internet Explorer | Edge
@@ -41,9 +36,7 @@ Learn about more methods and properties in the [documentation](http://github.com
 | Safari | Chrome iOS
 |---|---
 | Yes | Yes (when active)
-
 # About
-
 This library was made by [Cameron Samuels](http://cameronsamuels.com).
-
+### License
 MarqueeTitle in licensed under the [MIT License](LICENSE) but with many major edits.
