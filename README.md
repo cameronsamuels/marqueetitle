@@ -1,5 +1,4 @@
 MarqueeTitle is a JavaScript library for easily turning `document.title` into scrolling text (a marquee).
-
 # Why use this?
 - Simple, easy, user-friendly, and powerful
 - Instant and highly customizeable setup
@@ -19,10 +18,8 @@ MarqueeTitle is a JavaScript library for easily turning `document.title` into sc
 - Pause the scrolling and then resume back to where it left off
 - Stop the scrolling and reset to the normal position
 
-
 # Get started
-
-First download [bin/marquee.js](bin/marquee.js) to your code folder. Then use this code relatively in your app:
+First download [bin/marquee.js](bin/marquee.js) to your code folder. Then use this code relatively in your app for basic usage:
 
 ### HTML
 ```html
@@ -30,10 +27,7 @@ First download [bin/marquee.js](bin/marquee.js) to your code folder. Then use th
 ```
 ### JavaScript
 ```javascript
-var title = "User-friendly marquee title example"; //set title
-var speed = 250; //set speed in milleseconds
-var seperator = "|"; //set seperator for end to beginning
-MarqueeTitle.start(title, speed, seperator); //call function to start marquee
+MarqueeTitle.start(); //call function to start marquee
 ```
 
 Learn about more methods and properties in the [documentation](http://github.com/CameronSamuels/marqueetitle/wiki).
@@ -46,17 +40,10 @@ Learn about more methods and properties in the [documentation](http://github.com
 ### Mobile
 | Safari | Chrome iOS
 |---|---
-| Yes | Yes\*
-
-***More browsers and version codes coming soon***
-
-When a browser has a "\*" (says above), the marquee doesn't shift when the tab is not active
-
-Make sure to tell me if it works or not if it is not on this list. Thanks!
-
+| Yes | Yes (when active)
 
 # About
 
-This library was made by [Cameron Samuels](http://cameronsamuels.com). It is made in JavaScript.
+This library was made by [Cameron Samuels](http://cameronsamuels.com).
 
 MarqueeTitle in licensed under the [MIT License](LICENSE) but with many major edits.
