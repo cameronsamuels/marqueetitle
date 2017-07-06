@@ -1,6 +1,5 @@
 /* MarqueeTitle v2.0pre | MIT License | git.io/vQZbs */
-var MarqueeTitle = {}; MarqueeTitle.chars = [], MarqueeTitle.title = "", MarqueeTitle.speed = 250, MarqueeTitle.direction = 0,
-MarqueeTitle.separator = " ", MarqueeTitle.shifts = 1,
+var MarqueeTitle = {}; MarqueeTitle.chars = [], MarqueeTitle.title = "",
 MarqueeTitle.start = function(title, speed, separator) {
 	MarqueeTitle.separator = separator || MarqueeTitle.separator || " ";
 	title = (title || MarqueeTitle.title || document.title) + " " + MarqueeTitle.separator + " ";
@@ -35,7 +34,7 @@ MarqueeTitle.cycle = function(times) {
 		times--;
 	} while (times > 0);
 },
-MarqueeTitle.reverse = function() { MarqueeTitle.direction = MarqueeTitle.direction == 0?1:0 },
+MarqueeTitle.reverse = function() { MarqueeTitle.direction = MarqueeTitle.direction?0:1 },
 MarqueeTitle.separate = function(separator) {
 	MarqueeTitle.separator = separator;
 	MarqueeTitle.start();
