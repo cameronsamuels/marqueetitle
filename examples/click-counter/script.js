@@ -11,8 +11,8 @@ game.resume = function() {
   MarqueeTitle.resume(); //resume the marquee animation
 },
 game.update = function() {
-  if (game.on == false) return;
-  game.button.textContent = game.score; //update the button text to show the score
+  if (game.on == false) return; //stop executing if game is not running
+  game.button.innerHTML = game.score; //update the button text to show the score
   game.timeText.textContent = game.time; //update the time text to show the time left
 },
 game.over = function() {
