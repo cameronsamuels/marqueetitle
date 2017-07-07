@@ -37,4 +37,4 @@ a, a:visited {
   text-decoration: none;
 }
 a:hover { text-decoration: underline }
-::-webkit-scrollbar{width:0};
+::-webkit-scrollbar{width:0}
