@@ -33,7 +33,7 @@ Learn about more methods and properties in the [documentation](http://github.com
 ### Desktop
 |Chrome|Internet Explorer|Edge
 |---|---|---
-|Yes|8|Yes
+|Yes|Yes|Yes
 ### Mobile
 |Safari|Chrome iOS
 |---|---
