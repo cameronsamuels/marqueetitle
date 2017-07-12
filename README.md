@@ -35,7 +35,7 @@ Learn about more methods and properties in the [documentation](http://github.com
 |---|---|---|---
 |Yes|Yes|Yes|Yes
 ### Mobile
-|Safari|Chrome iOS
+|Safari|Chrome
 |---|---
 |Yes|Yes (when active)
 # About
