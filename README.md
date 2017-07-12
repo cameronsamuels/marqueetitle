@@ -31,9 +31,9 @@ MarqueeTitle.start(); //call this function to start marquee
 Learn about more methods and properties in the [documentation](http://github.com/CameronSamuels/marqueetitle/wiki).
 # Compatibility
 ### Desktop
-|Chrome|Internet Explorer|Edge
-|---|---|---
-|Yes|Yes|Yes
+|Chrome|Firefox|Internet Explorer|Edge
+|---|---|---|---
+|Yes|Yes|Yes|Yes
 ### Mobile
 |Safari|Chrome iOS
 |---|---
