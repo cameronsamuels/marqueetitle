@@ -1,5 +1,5 @@
 var game = {
-  on: false, time: 10, score: 0,
+  on: false, time: 10, score: 0, over: true,
   button: document.querySelector('button'), timeText: document.querySelector('h2')
 }; //initial variables
 game.pause = function(){
@@ -17,6 +17,7 @@ game.update = function() {
 },
 game.over = function() {
   game.pause(); //pause the game
+  game.over = true; //set variable to be over
   game.timeText.textContent = "Times up!!"; //notifiy that the game is over
   game.button.style.background = game.score > 50 ? "#0d0" : "#d00"; //set the button's backgroud to a user-friendly color
   game.button.style.border = "10px solid " + (game.score > 50 ? "#0a0" : "#a00"); //set the button's border to a user-friendly color
@@ -30,10 +31,11 @@ game.refresh = function() {
 game.start = function() {
   MarqueeTitle.start(); //start the marquee tab title animation
   game.on = true; //enable game refresh
+  game.over = false; //set game to be not over
   game.interval = setInterval(game.refresh, 1000); //set repeating to every 1 second to call game.refresh()
 },
 game.click = function() {
-  if (game.score == 0) game.start();
+  if (game.over == true) game.start(); //start game if game is over
   if (game.on == false) return; //stop execution if paused
   game.score++; //add 1 to score
   game.update(); //update the text of the button instantly before the interval executes
