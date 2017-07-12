@@ -20,10 +20,11 @@ button {
   max-width: 260px;
   height: 260px;
   max-height: 260px;
-  font-size: 230px;
+  font-size: 100px;
   box-shadow: none;
   background: #555;
   color: #eee;
+  line-height: 260px;
 }
 h2 {
   font-size: 3em;
