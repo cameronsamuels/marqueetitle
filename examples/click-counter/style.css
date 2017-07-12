@@ -25,7 +25,6 @@ button {
   background: #555;
   color: #eee;
 }
-@media screen and (min-width: 400px) { button { font-size: 300px; line-height:300px } }
 h2 {
   font-size: 3em;
   margin: 20px;
