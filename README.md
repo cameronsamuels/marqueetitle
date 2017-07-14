@@ -41,4 +41,4 @@ Learn about more methods and properties in the [documentation](http://github.com
 # About
 This library was made by [Cameron Samuels](http://cameronsamuels.com).
 ### License
-MarqueeTitle in licensed under the [MIT License](LICENSE) but with many major edits.
+MarqueeTitle in licensed under the [Cameron Samuels License](LICENSE).
