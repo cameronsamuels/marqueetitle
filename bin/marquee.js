@@ -1,4 +1,4 @@
-/* MarqueeTitle v2.0pre | MIT License | git.io/vQZbs */
+/* MarqueeTitle v2.0pre | Cameron Samuels License | git.io/vQZbs */
 var MarqueeTitle = {}; MarqueeTitle.chars = [], MarqueeTitle.title = "",
 MarqueeTitle.start = function(title, speed, separator) {
 	MarqueeTitle.separator = separator || MarqueeTitle.separator || " ";
