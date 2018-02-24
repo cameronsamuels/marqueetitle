@@ -80,7 +80,7 @@ code {
     padding: 0;
     color: #2879d0;
 }
-.inner { width:93% }
+.inner { width:65% }
 #main-content h1, #main-content h2 {
     color: #474747;
     text-indent: 6px;
@@ -105,4 +105,5 @@ code {
     header { padding: 20px 0 }
     header h1 { font-size: 48px }
     header a.button { position: relative }
+    .inner { width: 90% }
 }
