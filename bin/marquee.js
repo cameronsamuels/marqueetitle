@@ -1,41 +1,11 @@
-/* MarqueeTitle v2.0pre | Cameron Samuels License | git.io/vQZbs */
-var MarqueeTitle = {}; MarqueeTitle.chars = [], MarqueeTitle.title = "",
-MarqueeTitle.start = function(title, speed, separator) {
-	MarqueeTitle.separator = separator || MarqueeTitle.separator || " ";
-	title = (title || MarqueeTitle.title || document.title) + " " + MarqueeTitle.separator + " ";
-	MarqueeTitle.chars = title.split('');
-	MarqueeTitle.speed = speed || MarqueeTitle.speed || 250;
-	clearInterval(MarqueeTitle.interval);
-	MarqueeTitle.interval = setInterval(MarqueeTitle.cycle, MarqueeTitle.speed);
-	MarqueeTitle.title = title.replace(" " + MarqueeTitle.separator + " ", "");
-},
-MarqueeTitle.stop = function() {
-	clearInterval(MarqueeTitle.interval);
-	document.title = MarqueeTitle.title;
-},
-MarqueeTitle.loop = function(times, title, speed, separator) {
-	times = times || 1;
-	MarqueeTitle.separator = separator || MarqueeTitle.separator || " ";
-	title = (title || MarqueeTitle.title || document.title) + " " + MarqueeTitle.separator + " ";
-	MarqueeTitle.chars = title.split('');
-	MarqueeTitle.speed = speed || MarqueeTitle.speed || 250;
-	setTimeout(MarqueeTitle.stop, MarqueeTitle.speed * MarqueeTitle.title.length * times);
-	MarqueeTitle.interval = setInterval(MarqueeTitle.cycle, MarqueeTitle.speed);
-	MarqueeTitle.title = title.replace(" " + MarqueeTitle.separator + " ", "");
-},
-MarqueeTitle.pause = function() { clearInterval(MarqueeTitle.interval) },
-MarqueeTitle.resume = function() { MarqueeTitle.interval = setInterval(MarqueeTitle.cycle, MarqueeTitle.speed) },
-MarqueeTitle.cycle = function(times) {
-	times = times || MarqueeTitle.shifts || 1;
-	do {
-		if (MarqueeTitle.direction) MarqueeTitle.chars.unshift(MarqueeTitle.chars[MarqueeTitle.chars.length-1]), MarqueeTitle.chars.pop();
-		else MarqueeTitle.chars.push(MarqueeTitle.chars[0]), MarqueeTitle.chars.shift();	
-		document.title = MarqueeTitle.chars.join("");
-		times--;
-	} while (times > 0);
-},
-MarqueeTitle.reverse = function() { MarqueeTitle.direction = MarqueeTitle.direction?0:1 },
-MarqueeTitle.separate = function(separator) {
-	MarqueeTitle.separator = separator;
-	MarqueeTitle.start();
+/* MarqueeTitle v3.0 | Cameron Samuels License | git.io/vQZbs */
+function MarqueeTitle(c, a, m) {
+	window.title = (c || document.title) + " " + (a || " ") + " ";
+	setInterval(function() {
+		var x = window.title.split("");
+		x.push(x[0]);
+		x.shift();
+		window.title = x.join("");
+		document.title = window.title;
+	}, m || 300);
 }
