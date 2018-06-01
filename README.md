@@ -1,23 +1,18 @@
-MarqueeTitle is a JavaScript library for easily turning `document.title` into scrolling text (a marquee).
+MarqueeTitle is a JavaScript library that easily makes the `document.title` into scrolling text (a marquee).
 
 ## Features
-- Simple & user-friendly
-- Extremely light-weight
+- Simple, user-friendly, and extremely light-weight
 - When the title is too long, user's see the entire title
 - Stands out & brings attention
 - Customizeable scrolling speed & separation text
 
 ## Getting started
-Download [marquee.js](https://git.io/vpBc9) to your workspace.
-Then use this code relatively on your website:
+Download [marquee.js](https://git.io/vpBc9) to the website's files.
+Edit the last few lines of the file to fit the website's needs.
+Then use this code to add the script to the website:
 
-### HTML
 ```html
 <script src="marquee.js"></script>
 ```
-### JavaScript
-```javascript
-MarqueeTitle(); // start marquee
-```
 
-Be aware of the **[license](https://git.io/vpBc7)** for MarqueeTitle
+Be aware of the **[license](https://git.io/vpBc7)** for MarqueeTitle.
