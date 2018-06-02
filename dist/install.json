@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json.schemastore.org/install",
+  "resources": {
+    "body": [
+      {
+        "type": "script",
+        "src": "./script.js"
+      }
+    ]
+  },
+  "preview": {
+    "handlers": [
+      {
+        "options": ["_default"],
+        "execute": "INSTALL_SCOPE.setOptions(INSTALL_OPTIONS)"
+      }
+    ]
+  },
+  "options": {
+    "properties": {
+      "title": {
+        "title": "Page Title (leave blank for existing title)",
+        "type": "string",
+        "default": "This page has a scrolling tab title",
+        "placeholder": "Text on the web browser's page tab",
+        "order": 1
+      },
+      "separator": {
+        "title": "Title Repeat Separator",
+        "type": "string",
+        "default": "-",
+        "placeholder": "Separation text between the end and the beginning of the title",
+        "order": 2
+      },
+      "direction": {
+        "title": "Scroll Direction",
+        "type": "string",
+        "enum": [
+          "left",
+          "right"
+        ],
+        "enumNames": {
+          "left": "Left",
+          "right": "Right"
+        },
+        "default": "left",
+        "order": 3
+      },
+      "speed": {
+        "title": "Scroll Speed (in milleseconds)",
+        "type": "integer",
+        "default": 300,
+        "placeholder": "300",
+        "minimum": 200,
+        "maximum": 5000,
+        "order": 4
+      },
+      "enabled": {
+        "title": "Enabled",
+        "type": "boolean",
+        "default": true,
+        "order": 5
+      },
+      "help": {
+        "type": "help",
+        "helpvalue": "<hr>Click \"Preview in a separate window\" to view the changes to the site.<br>Learn more about MarqueeTitle with the <a href='https://git.io/vAPs3'>documentation</a>.",
+        "order": 6
+      }
+    }
+  }
+}
