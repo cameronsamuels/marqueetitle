@@ -1,4 +1,4 @@
-/* MarqueeTitle v4.0 | Cameron Samuels License | git.io/vQZbs */
+/* MarqueeTitle v4.0 | MIT License | git.io/vQZbs */
 (function(c, a, m) {
   var title = (c || document.title) + " " + (a || "-") + " ";
   setInterval(function() {
